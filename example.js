@@ -1,7 +1,8 @@
 const font_middleware = require('connect-fonts'),
   opensans = require('connect-fonts-opensans'),
   ejs = require('ejs'),
-  fs = require('fs');
+  fs = require('fs'),
+  port = process.env['PORT'] || 8765;
 
 var app = require('express').createServer(),
   tpl = fs.readFileSync(__dirname + '/tpl.ejs', 'utf8');
@@ -9,7 +10,7 @@ var app = require('express').createServer(),
 // connect-fonts setup
 app.use(font_middleware.setup({
   fonts: [opensans],
-  allow_origin: 'http://localhost'
+  allow_origin: 'http://localhost:' + port
 }));
 
 // ALL THE THINGS in the default font.
@@ -33,4 +34,4 @@ app.get('/detect', function(req, res) {
   res.send(rendered);
 });
 
-app.listen(process.env['PORT'] || 8765, '127.0.0.1');
+app.listen(port, '127.0.0.1');
