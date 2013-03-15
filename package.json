@@ -5,8 +5,10 @@
   "description": "just messing around with connect-fonts before finishing the blog post",
   "dependencies": {
     "connect": "1.9.0",
-    "express": "2.5.11",
     "connect-fonts": "*",
-    "connect-fonts-opensans": "*"
+    "connect-fonts-opensans": "*",
+    "ejs": "0.8.3",
+    "express": "2.5.11",
+    "locale": "0.0.8"
   }
 }
