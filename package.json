@@ -1,7 +1,16 @@
 {
   "name": "connect-fonts-example",
+  "author": "Jared Hirsch <ohai@6a68.net>",
   "version": "0.0.1",
-  "description": "super simple example of connect-fonts at work",
+  "homepage": "https://github.com/6a68/connect-fonts-example",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/6a68/connect-fonts-example.git"
+  },
+  "bugs": {
+    "url": "https://github.com/6a68/connect-fonts-example/issues"
+  },
+  "description": "super simple example of connect-fonts at work, see related blog post on hacks.mozilla.org",
   "dependencies": {
     "connect": "1.9.0",
     "connect-fonts": "0.0.9-alpha8",
